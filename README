@@ -1,0 +1,13 @@
+Adds filtering by ranges of dates birth in the admin filter sidebar.
+
+Example:
+
+from django.db import models
+import rangevaluesfilterspec
+ 
+class Person(models.Model):
+    dateofbirth = models.DateField()
+    dateofbirth.age_filter_range = [18,21,30,40]
+
+    class Admin:
+        list_filter = ['dateofbirth']
