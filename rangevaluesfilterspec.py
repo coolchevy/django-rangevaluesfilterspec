@@ -1,6 +1,8 @@
 """
 Adds filtering by ranges of dates birth in the admin filter sidebar.
 
+https://github.com/coolchevy/django-rangevaluesfilterspec
+
 Example:
 
 from django.db import models
